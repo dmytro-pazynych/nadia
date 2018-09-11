@@ -23,7 +23,7 @@
   </head>
 
   <body>
-    <h1 class="display-4" style="margin-top: 25%; text-align: center;">Надя</h1>
+    <h1 class="display-4" style="margin-top: 25%; text-align: center; color: rgba(193,49,0,1);;">Надя</h1>
     <h1 id="words" class="display-6" style="text-align: center; color: rgba(193,49,0,1);"></h1>
     <h6 id="lang" style="text-align: center; color: rgba(193,49,0,1);"></h6>
     
@@ -31,7 +31,7 @@
       // margin-top: 25%
       var w = ['С днем рождения!', 'Happy birthday!', 'З Днем народження!', '¡Feliz cumpleaños!', 'Buon compleanno!', 'Bon anniversaire!', 'Alles Gute zum Geburtstag!', 'عيد مولد سعيد!'];
       var l = ['Russian', 'English', 'Ukranian', 'Spanish', 'Italian', 'French', 'German', 'Arabic'];
-      var c = ['Maroon', 'Blue', 'Olive','Maroon', 'Blue', 'Olive','Blue'];
+      var c = ['Maroon', 'Blue', 'Olive','Teal', 'Navy', 'Purple','Green'];
       var i = 0;
 
         function counter(t) {
@@ -40,7 +40,7 @@
             document.getElementById("words").innerHTML = w[i];
             document.getElementById("lang").innerHTML = l[i];
             document.getElementById("words").style.color = c[i];
-            document.getElementById("lang").style.color = c[i];
+            
             if (i == 7) {
               i = 0
             } else {
