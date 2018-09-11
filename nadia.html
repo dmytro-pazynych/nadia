@@ -36,17 +36,17 @@
 
         function counter(t) {
           counting = setInterval(function() {
-
-            document.getElementById("words").innerHTML = w[i];
-            document.getElementById("lang").innerHTML = l[i];
-            document.getElementById("words").style.color = c[i];
-            document.getElementById("lang").style.color = c[i];
-            
             if (i == 7) {
               i = 0
             } else {
               i++;
             }
+            document.getElementById("words").innerHTML = w[i];
+            document.getElementById("lang").innerHTML = l[i];
+            document.getElementById("words").style.color = c[i];
+            document.getElementById("lang").style.color = c[i];
+            
+
  
           }, t);
         }
